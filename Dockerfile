@@ -14,4 +14,4 @@ RUN apt-get update
 
 RUN apt-get install eclipse-pde -y
 
-ENTRYPOINT ["/opt/eclipse/eclipse"]
+#ENTRYPOINT ["/opt/eclipse/eclipse"]
