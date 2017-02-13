@@ -12,9 +12,9 @@ RUN apt-get update
 RUN apt-get install -y openjdk-8-jre openjdk-8-jdk
 RUN apt-get update
 
-RUN add-apt-repository ppa:ubuntu-desktop/ubuntu-make
-RUN apt-get update
-RUN apt-get install ubuntu-make -y
-RUN umake ide eclipse
+RUN wget https://www.eclipse.org/downloads/download.php?file=/oomph/epp/neon/R2a/eclipse-inst-linux64.tar.gz
+RUN mv eclipse-inst-linux64.tar.gz /opt
+RUN tar -xvzf /opt/eclipse-inst-linux64.tar.gz
+RUN rm /opt/eclipse-inst-linux64.tar.gz
 
-#ENTRYPOINT ["/opt/eclipse/eclipse"]
+ENTRYPOINT ["/opt/eclipse/eclipse"]
