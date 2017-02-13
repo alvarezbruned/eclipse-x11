@@ -17,4 +17,4 @@ RUN mv eclipse-inst-linux64.tar.gz /opt
 RUN tar -xvzf /opt/eclipse-inst-linux64.tar.gz
 RUN rm /opt/eclipse-inst-linux64.tar.gz
 
-ENTRYPOINT ["/opt/eclipse/eclipse"]
+#ENTRYPOINT ["/opt/eclipse/eclipse"]
