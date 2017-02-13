@@ -15,6 +15,6 @@ RUN apt-get update
 RUN add-apt-repository ppa:ubuntu-desktop/ubuntu-make
 RUN apt-get update
 RUN apt-get install ubuntu-make -y
-RUN umake ide eclipse -y
+RUN umake ide eclipse
 
 #ENTRYPOINT ["/opt/eclipse/eclipse"]
