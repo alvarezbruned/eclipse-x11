@@ -12,6 +12,9 @@ RUN apt-get update
 RUN apt-get install -y openjdk-8-jre openjdk-8-jdk
 RUN apt-get update
 
-RUN apt-get install eclipse-pde -y
+RUN add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+RUN apt-get update
+RUN apt-get install ubuntu-make -y
+RUN umake ide eclipse -y
 
 #ENTRYPOINT ["/opt/eclipse/eclipse"]
