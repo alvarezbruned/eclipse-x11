@@ -6,7 +6,8 @@ MAINTAINER Albert Alvarez
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y wget
 RUN apt-get install software-properties-common -y
-
+RUN add-apt-repository ppa:openjdk-r/ppa
+RUN apt-get update
 
 RUN apt-get install -y openjdk-8-jre openjdk-8-jdk
 RUN apt-get update
