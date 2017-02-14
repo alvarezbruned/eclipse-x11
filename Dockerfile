@@ -20,7 +20,7 @@ RUN apt-get install -y oracle-java8-installer
 
 RUN add-apt-repository ppa:ubuntu-desktop/ubuntu-make -y
 RUN apt-get update && apt-get install ubuntu-make -y
-RUN umake ide eclipse /home/.local/share/umake/ide/eclipse
+RUN umake ide eclipse /root/.local/share/umake/ide/eclipse
 
 
-ENTRYPOINT ["/home/.local/share/umake/ide/eclipse/eclipse"]
+ENTRYPOINT ["/root/.local/share/umake/ide/eclipse/eclipse"]
